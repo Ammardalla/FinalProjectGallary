@@ -1,0 +1,101 @@
+html{
+    scroll-behavior: smooth;
+}
+body {
+    background-color: #dedede;
+    padding: 5px;
+    margin: 15px;
+    font-size: 25px;
+    font-family:Arial, sans-serif;
+}
+
+h1 {
+    text-align: center;
+    font-family:Arial, sans-serif;
+    font-size: 1.95em;
+}
+
+h2{
+    text-align:center;
+  }
+
+li{
+    margin-top: 20px;
+}
+
+figure{
+    border: 5px solid blue;
+    border-radius: 35px;
+    width: 100%;
+  }
+  img{
+    border-radius: 35px;
+    max-height: 30vh;
+    width: 100%;
+  }
+  figcaption{
+    text-align: center;
+  }
+
+.label{
+    text-align: center;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.grid{
+    display: grid;
+    grid-template-columns: 80%;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+@media  screen and (min-width:772px) {
+    .grid{
+        display: grid;
+        grid-template-columns: 40% 40%;
+        justify-content: space-evenly;
+
+    }
+    figure{
+        border-radius: 50%;
+        margin-left: 0px;
+      }
+    img{
+        border-radius: 50%;
+        max-height: 30vh;
+    }
+    .last{
+        grid-column-start: 1;
+        grid-column-end: 3;
+    }   
+}
+
+@media  screen and (min-width:992px){
+    figure{
+        border-radius: unset;
+        margin-left: 0px;
+      }
+    img{
+        border-radius: unset;
+        max-height: 30vh;
+    }
+    .last1{
+        grid-column-start: 1;
+        grid-column-end: 3;
+    }  
+}
+
+@media  screen and (prefers-reduced-motion:reduce){
+    html{
+        scroll-behavior: unset;
+    }
+}
+
+@media screen and (prefers-color-scheme:dark) {
+    figure{
+        background-color: black;
+        color: yellowgreen;
+        border-color: black;
+    }
+
+    
+}
